@@ -1,0 +1,8 @@
+apiVersion: appconnect.ibm.com/v1beta1
+kind: Configuration
+metadata:
+  name: setdbparams-4-fhir
+spec:
+  secretName: setdbparams-4-fhir
+  type: setdbparms
+  version: {{ .Values.ibm_ace_server_instance.ace_version }}

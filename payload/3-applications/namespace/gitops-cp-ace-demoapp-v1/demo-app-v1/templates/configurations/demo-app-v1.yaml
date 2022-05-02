@@ -1,0 +1,37 @@
+apiVersion: appconnect.ibm.com/v1beta1
+kind: IntegrationServer
+metadata:
+  name: {{ .Values.ibm_ace_server_instance.application_name }}
+spec:
+  adminServerSecure: true
+  createDashboardUsers: true
+  designerFlowsOperationMode: disabled
+  enableMetrics: true
+  license:
+    accept: true
+    license: {{ .Values.ibm_ace_server_instance.license }}
+    use: {{ .Values.ibm_ace_server_instance.license_use }}
+  pod:
+    containers:
+      runtime:
+        resources:
+          limits:
+            cpu: 600m
+            memory: 700Mi
+          requests:
+            cpu: 300m
+            memory: 300Mi
+  replicas: 1
+  router:
+    timeout: 120s
+  service:
+    endpointType: http
+  version: {{ .Values.ibm_ace_server_instance.ace_version }}
+  barURL: >-
+    https://gjayasee.jfrog.io/artifactory/default-generic-local/demo-app-v1/ace_only_demo.bar
+  configurations:
+    - bar-auth
+    - hl7-fhir-keystore
+    - hl7-server-conf
+    - setdbparams-4-fhir
+    - hl7-fhir-trustore
