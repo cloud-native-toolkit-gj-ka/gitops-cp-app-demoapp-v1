@@ -1,0 +1,12 @@
+global: {}
+
+ibm-ace-operator:
+  subscriptions:
+    ibmace:
+      name: ibm-ace
+      subscription:
+        channel: v3.0
+        installPlanApproval: Automatic
+        name: ibm-appconnect
+        source: ibm-operator-catalog
+        sourceNamespace: openshift-marketplace
