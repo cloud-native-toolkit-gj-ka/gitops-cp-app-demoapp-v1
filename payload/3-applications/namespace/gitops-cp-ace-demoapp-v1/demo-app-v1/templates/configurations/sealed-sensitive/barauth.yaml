@@ -1,0 +1,23 @@
+apiVersion: bitnami.com/v1alpha1
+kind: SealedSecret
+metadata:
+  creationTimestamp: null
+  name: bar-auth
+  namespace: gitops-cp-ace-demoapp-v1
+spec:
+  encryptedData:
+    configuration: AgAW5+N8XgufFbQWquIU+7KCt/W0b39+at3ZKhHynZXP6jX9CqYwTS0X06PJpyPumXNTnjDIaooFci28cGYoUKW99YmT2Msn8tM/k37zhejnoxQtlJf6sizsHFUM2tlCfPVUtErWk0ri7EsRlNYENIZWrBJn6U2lYJFNYWLd75uxBfj+ncbZLe02CoxllHHMisg9OtGNvJ9wgLeo/O45ociYQhwFcMdcpXC8nh1zDn/P6UFYGnlEojN/e8KuhSx+isRKP3c57KIQoDZFWkDlx3h6Hnf9GNscCiiBCgIUbLJ61w/ryucuWUMSF7CYWTM/P4VfeJfswX2rwQRpntgJ6LgF0BhLMeJklLc4BGltYoJNfcQlZZvvMBnae3ItWBl/RkxI/HvDG0H/PN7pYwjiPVW1CCTe9X1dKy6FRFDXGO60+a3YEm0UeF2UciWRLIb04bSd7N63ZIMdeNt1NXl8ejgmaZTLGdYBjbtEBwNVJ3liiJgrOzOV2HCpur6jLBhGG52r8poSj/koE1nDvbJXsw8CC5s/c++atCQgmeGJ1T8F2kWfRsLFg3OF8KhKxnM2GNtGHMAYWxZWrzKHTelj5+BR63u9vkcJ0Fo6hYIMBXxV+UUZ/QHLVf6Te/RPSi4GiIW9nUMQVgIyBud7Jh34mrhv7V3OvlcBsJvUJ7iZ6b7MP4H66Uboh09KwU1qZOkjtF6dHikpE0beDnVYTDbEi8DNOGrliSSKuCC8bfsxJsD9MaQqmbyafoS3vLRrnshDGwNg3t0XIfyCuqvJebXrWfqxU786/OSrEmW3zztX21niXL97nYZnTjZPN7zVxqai6OEkYDd2wBF1zyX8zVjTvCqKfR9YIzzB+QJDXdAbIYa0feplBlTMetuJIfMsCQK1vYvcoSEP++RV5rbwfdXVkLYQWGS2rOHZQKjwVBf7LUJvQCA=
+  template:
+    data: null
+    metadata:
+      creationTimestamp: null
+      labels:
+        app.kubernetes.io/component: configuration
+        app.kubernetes.io/instance: bar-auth
+        app.kubernetes.io/managed-by: ibm-appconnect
+        app.kubernetes.io/name: bar-auth
+        appconnect.ibm.com/kind: Configuration
+      name: bar-auth
+      namespace: gitops-cp-ace-demoapp-v1
+    type: Opaque
+

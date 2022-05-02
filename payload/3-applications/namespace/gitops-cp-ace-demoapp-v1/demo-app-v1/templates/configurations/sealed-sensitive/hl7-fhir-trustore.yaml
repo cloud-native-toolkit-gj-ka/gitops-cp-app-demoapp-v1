@@ -1,0 +1,23 @@
+apiVersion: bitnami.com/v1alpha1
+kind: SealedSecret
+metadata:
+  creationTimestamp: null
+  name: hl7-fhir-trustore
+  namespace: gitops-cp-ace-demoapp-v1
+spec:
+  encryptedData:
+    configuration: AgCKqFJBEVRALu2ZIi/02iFX369xhWYH2CZQoqZCrlZ5jF4H8kiGMPyIug8XNX1Nn/aLBYbXgRSdFvQ+yvt1RoKlJqCmQsLr/0wczEj94+KJJgbelpbchSEuM5CvmTdFoXLJc/RGEde5gqNXFhKLbHoOrqJEu3zKSlJiFjaeymNsQuqZKcUtJdIUtfyPTqbYQfCz3+WyU0Y+5kJlG5u8c7Go8c7bSD3KPjPC0fTD+tXiy5Tqsoxt5cTC4P21HhVs8z2Lh5o8/rRhk3FUQ0oqo4bqN4xx52+wNZbIANzDHciG4cu0OYtVo9syOB71RfiVoddfC167GwXY2W13+5axvPXOBqfJYqcj0FLn2Om/Z64PYD0rV3MNMPrKwwyw//yWtTgS3RSUoz03Dp5D/ZaqlYu8EWUOm8R4/qlTJ6AhjyBsbuRV2leDv+zL3SEmlmsqaFxyo4YEqfCJBK+aURepd2Va5YKshY1wImCmFEl894PRIQ2cD/1usnFYTNCgrIYzR1GsbH+FsTOHCbE8wujO/wYyoKdlxErJHrjXqyKFbgCHiWqYHH/5CHnkM1E+mtut2+ovIbDWU3BDDNGNXXe6AFzrZgp8zVn/l7SaucRLJar9rShGIFgteV3+weAU4N6BI3qu8HO8nVIAEel74/bCqvrfkNM6Mskp+zetB0jhSv0i8ilU1SflNYetcSyEjNnUJARk8nX3S/oy9jo2QJfX3lKyuiFxCRrur98NBipNqA6POqsQlf58y/ssuySh7sQ25m4L3KEzChh1i5oE33IbaHaBdTIlpU1An8iR/0k32OHKnSH64SPle/Py0XXW/fZ8hWeMv8efen7ddhLNc82JzwgZcuKV2PvABl+ktPzIx02jyjzRlttAUvhs81XuYQl3LvR0/E/rZgk6NXD+SQ1P1vteACtf+hKiPqBa7wPAyHeu0gWhsbxhVg3FQoaJd3fDv6mXhilzz1nUItXsOJpaiIt/h2LhsRyKa6o7ySbNg0sE34083ESw4mLkWVUbAbHhnALRHDQNpbOTQ5WW2ZfaS+Yz65l6Uq40Fng1y7nP4FfPK6sr5JEPJlrNrUyVsU42Sr/JhAAlFmTRHYcVYV/G4u4702NR7ylEL8hUvr9pqp9tkHrRIeXzeu8rvdS3fKEsm2Nw/FCw5KOk5MOaLp3gB8/y6TVatstNmOw560kaSamejif2UaHUDyk70ztHarDNSu6m0h6nD+03ukKibYGtMNq6yxQgJrL3dRBXEwLAfCFCULYtSv9lk5kdq+jynjLywKycTHyDbq3hert+x+oxMnTnQAuyO2TB8mk760gc2eRAFTysDv7a4P4DvdCgxYejaHSYXNqfEl/EPhz9LGnn1Gb/fM3tJhJklSiECIRWuimYUHMDdCQmqO7c75m/BlW84ymCmRLq4X82pNBG95rmAjYh7P+Nz3+so/kpoye/DWYYxhL4RqOPA4d13wfQDKLdSaCioMO6v2s/nyLF7ebVNdb3TPFS3KEQPUSDDKONQFF5ZR0Xt8lAqF8xVzNOb4gtf3vy7lcK0bEmTfO+SA+7gmsRTrAhp77pJ45UdH0D3kLNQfvkXdF9tHXfmvYye0FanxDArrjiOQ+O877EhcqxtaSf4WpN//Cod6QsFO/ol72g1vMWqz5s56eLPlJA5o7f2fsMR0fhPlH0NnEBIykCXuiNaddfdODldqtRwIle8Qk/OiX2ssdjaLQu5V1y/eEHMh28APNkFEMjUzjAbqZcOfA/Yjt4kFbBhAWirlCXBahK4zM6D4zYCwSkpbS0fjD6a/ngAlks+XzA6z68YifcvDgEOALEpmrmyuSXzsk0H2q9f27lT7M1Nnk41HTk2/qr8NCN+jk5ipZskXWcGqjYIPoTT5zsOcd8vMCma6Shyi++7437xsYBx5gin8ER
+  template:
+    data: null
+    metadata:
+      creationTimestamp: null
+      labels:
+        app.kubernetes.io/component: configuration
+        app.kubernetes.io/instance: hl7-fhir-trustore
+        app.kubernetes.io/managed-by: ibm-appconnect
+        app.kubernetes.io/name: hl7-fhir-trustore
+        appconnect.ibm.com/kind: Configuration
+      name: hl7-fhir-trustore
+      namespace: gitops-cp-ace-demoapp-v1
+    type: Opaque
+
