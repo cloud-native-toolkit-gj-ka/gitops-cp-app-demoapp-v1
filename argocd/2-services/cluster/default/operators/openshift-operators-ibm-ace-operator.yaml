@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: openshift-operators-ibm-ace-operator
+spec:
+  destination:
+    namespace: openshift-operators
+    server: https://kubernetes.default.svc
+  project: 2-services
+  source:
+    path: payload/2-services/namespace/openshift-operators/ibm-ace-operator
+    repoURL: https://github.com/cloud-native-toolkit-gj-ka/gitops-cp-app-demoapp-v1
+    targetRevision: main
+    helm:
+      releaseName: ibm-ace-operator
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+  ignoreDifferences: []
