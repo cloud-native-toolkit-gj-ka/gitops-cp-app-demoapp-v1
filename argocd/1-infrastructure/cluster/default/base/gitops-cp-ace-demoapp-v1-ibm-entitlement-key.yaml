@@ -1,0 +1,19 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: gitops-cp-ace-demoapp-v1-ibm-entitlement-key
+spec:
+  destination:
+    namespace: gitops-cp-ace-demoapp-v1
+    server: https://kubernetes.default.svc
+  project: 1-infrastructure
+  source:
+    path: >-
+      payload/1-infrastructure/namespace/gitops-cp-ace-demoapp-v1/ibm-entitlement-key
+    repoURL: https://github.com/cloud-native-toolkit-gj-ka/gitops-cp-app-demoapp-v1
+    targetRevision: main
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+  ignoreDifferences: []
