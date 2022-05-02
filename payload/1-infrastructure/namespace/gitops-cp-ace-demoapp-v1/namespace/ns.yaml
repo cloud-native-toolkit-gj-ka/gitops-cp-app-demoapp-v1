@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: gitops-cp-ace-demoapp-v1
+  annotations:
+    argocd.argoproj.io/sync-wave: "-30"
+---
+apiVersion: operators.coreos.com/v1
+kind: OperatorGroup
+metadata:
+  name: gitops-cp-ace-demoapp-v1-operator-group
+  namespace: gitops-cp-ace-demoapp-v1
+  annotations:
+    argocd.argoproj.io/sync-wave: "-20"
+spec:
+  targetNamespaces:
+    - gitops-cp-ace-demoapp-v1
+---
