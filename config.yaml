@@ -1,0 +1,45 @@
+"applications":
+  "argocd-config":
+    "path": "argocd/3-applications"
+    "project": "3-applications"
+    "repo": "github.com/cloud-native-toolkit-gj-ka/gitops-cp-app-demoapp-v1"
+    "url": "https://github.com/cloud-native-toolkit-gj-ka/gitops-cp-app-demoapp-v1"
+    branch: main
+  "payload":
+    "path": "payload/3-applications"
+    "repo": "github.com/cloud-native-toolkit-gj-ka/gitops-cp-app-demoapp-v1"
+    "url": "https://github.com/cloud-native-toolkit-gj-ka/gitops-cp-app-demoapp-v1"
+    branch: main
+"boostrap":
+  "argocd-config":
+    "path": "argocd/0-bootstrap"
+    "project": "0-bootstrap"
+    "repo": "github.com/cloud-native-toolkit-gj-ka/gitops-cp-app-demoapp-v1"
+    "url": "https://github.com/cloud-native-toolkit-gj-ka/gitops-cp-app-demoapp-v1"
+    branch: main
+  payload:
+    branch: main
+"infrastructure":
+  "argocd-config":
+    "path": "argocd/1-infrastructure"
+    "project": "1-infrastructure"
+    "repo": "github.com/cloud-native-toolkit-gj-ka/gitops-cp-app-demoapp-v1"
+    "url": "https://github.com/cloud-native-toolkit-gj-ka/gitops-cp-app-demoapp-v1"
+    branch: main
+  "payload":
+    "path": "payload/1-infrastructure"
+    "repo": "github.com/cloud-native-toolkit-gj-ka/gitops-cp-app-demoapp-v1"
+    "url": "https://github.com/cloud-native-toolkit-gj-ka/gitops-cp-app-demoapp-v1"
+    branch: main
+"services":
+  "argocd-config":
+    "path": "argocd/2-services"
+    "project": "2-services"
+    "repo": "github.com/cloud-native-toolkit-gj-ka/gitops-cp-app-demoapp-v1"
+    "url": "https://github.com/cloud-native-toolkit-gj-ka/gitops-cp-app-demoapp-v1"
+    branch: main
+  "payload":
+    "path": "payload/2-services"
+    "repo": "github.com/cloud-native-toolkit-gj-ka/gitops-cp-app-demoapp-v1"
+    "url": "https://github.com/cloud-native-toolkit-gj-ka/gitops-cp-app-demoapp-v1"
+    branch: main
