@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: openshift-marketplace-ibm-catalogs
+spec:
+  destination:
+    namespace: openshift-marketplace
+    server: https://kubernetes.default.svc
+  project: 1-infrastructure
+  source:
+    path: payload/1-infrastructure/namespace/openshift-marketplace/ibm-catalogs
+    repoURL: https://github.com/cloud-native-toolkit-gj-ka/gitops-cp-app-demoapp-v1
+    targetRevision: main
+    helm:
+      releaseName: ibm-catalogs
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+  ignoreDifferences: []
